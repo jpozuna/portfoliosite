@@ -7,7 +7,7 @@
 
 /* Base styles for the document */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'garamond', serif;  /* Use a serif font for a classic look */
   background-color: #ffffff;
   color: #000000;
 }
@@ -21,31 +21,39 @@ body {
   padding: 2rem;
 }
 
-/* Frame container - creates the black bordered square frame */
 .content {
-  width: 90vh;          /* Set width based on viewport height */
-  max-width: 90vw;      /* Prevent frame from being too wide on narrow screens */
+  width: 90vh;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;            /* Space between elements */
-  border: 2px solid #000000;  /* The frame border */
-  aspect-ratio: 1;      /* Makes it a perfect square */
-  padding: 10%;         /* Inner spacing */
-  background-color: #ffffff;
+  justify-content: center;
+  border: 2px solid black;
+  aspect-ratio: 1;
+  padding: 10%;
+  background-color: white;
+  gap: 2rem;
 }
 
-/* Black square - main visual element */
 .black-square {
   width: 100%;
-  height: 100%;
-  background-color: #000000;
+  aspect-ratio: 1;
+  background-color: black;
+  color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;  /* Smooth hover animation */
-  cursor: pointer;
+  justify-content: center;
+  text-align: center;
 }
+
+.white-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+
 
 /* Hover effect for black square */
 .black-square:hover {

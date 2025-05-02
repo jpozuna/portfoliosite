@@ -7,14 +7,13 @@ function App() {
       <div className="content">
         <div className="black-square">
           <div className="square-content">
-            <h1 className="name">YOUR NAME</h1>
-            <p className="title">SOFTWARE DEVELOPER</p>
+            <h1 className="name">Joshua Paulino Ozuna</h1>
           </div>
         </div>
         <nav className="navigation">
-          <a href="#about">ABOUT</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Connect</a>
         </nav>
       </div>
     </div>
