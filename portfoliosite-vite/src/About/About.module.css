@@ -1,0 +1,184 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    border: 2px solid #000000;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.5rem;
+}
+
+.section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.skillCategory {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.skillCategory h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.skillCategory ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skillCategory li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.skillCategory li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000000;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.job {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.job h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.duration {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.job ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.job li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+} 

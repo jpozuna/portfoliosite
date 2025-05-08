@@ -1,0 +1,21 @@
+.logoBox {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.logoImg {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+} 

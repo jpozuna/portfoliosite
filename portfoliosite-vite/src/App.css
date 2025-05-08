@@ -1,0 +1,16 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Garamond', serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html, body, #root {
+  height: 100%;
+}
