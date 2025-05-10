@@ -1,40 +1,171 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 120px);
-  gap: 10px;
-  padding: 20px;
-  background: #f5f5f2;
+  grid-template-columns: 100px 125px 150px 100px;
+  grid-template-rows: 75px 90px 100px 80px;
+  gap: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 
-.projectLarge {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  background: #fff;
+.title {
   font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  margin: 2rem 1rem 1rem;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
+  transform: translateY(40px);
 }
 
-.projectSmall {
-  background: #aab6bb;
+/* Base project styles */
+.project {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project1 {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%);
+  margin: -80px 0 0 -80px;
+  padding: 15px;
+}
+
+.project2 {
+  grid-column: 3;
+  grid-row: 1;
+  margin: -15px 0 0 -235px;
+  width: 280px;
+}
+
+.project3 {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 60% 30%, 60% 100%, 40% 100%, 40% 30%, 0 30%);
+  margin: -10px 0 0 10px;
+  width: 260px;
+}
+
+.project4 {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  margin: -70px 0 0 -8px;
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  clip-path: polygon(0 -300%, 400% -300%, 400% 100%, 0 100%, 0 90%, 50% 90%, 50% 30%, 0 30%);
+}
+
+.project5 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.project6 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.project7 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.project8 {
+  grid-column: 3 / 5;
+  grid-row: 3;
+}
+
+.projectContent {
+  padding: 1rem;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.project:hover .projectContent {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projectContent h3 {
   font-size: 1.2rem;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.projectMedium {
-  background: #444;
+.description {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.software {
+  background: #333;
   color: #fff;
+}
+
+.design {
+  background: #c0c0c0;
+  color: #000;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.keyItem {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.keyBox {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.keyBox.software {
+  background: #444;
+}
+
+.keyBox.design {
+  background: #aab6bb;
 }
 
 .quote {

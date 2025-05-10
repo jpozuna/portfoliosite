@@ -91,6 +91,14 @@
     width: 100%;
 }
 
+.noUnderline {
+    text-decoration: none !important;
+}
+
+.noUnderline:hover {
+    text-decoration: none !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .black-square {

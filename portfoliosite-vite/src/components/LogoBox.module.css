@@ -1,7 +1,7 @@
 .logoBox {
-    position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
+    position: absolute;
+    top: 6rem;
+    left: 25rem;
     width: 56px;
     height: 56px;
     background: #fff;
@@ -14,8 +14,38 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
+.logoLink {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .logoImg {
     max-width: 80%;
     max-height: 80%;
-    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.hoverText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logoLink:hover .logoImg {
+    opacity: 0;
+}
+
+.logoLink:hover .hoverText {
+    opacity: 1;
 } 
