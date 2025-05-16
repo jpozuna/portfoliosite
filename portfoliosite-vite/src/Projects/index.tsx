@@ -13,80 +13,61 @@ export default function Projects() {
           <div className={styles.grid}>
             <div className={`${styles.project} ${styles.software} ${styles.project1}`}>
               <div className={styles.projectContent}>
-                <h3>Software Project</h3>
-                <p className={styles.description}>A brief description of the project and its key features</p>
+                <h3>Canvas Clone</h3>
+              
                 <div className={styles.projectLinks}>
                   <a href="#" className={styles.link}>View Project</a>
-                  <a href="#" className={styles.link}>Source Code</a>
+                  
                 </div>
               </div>
             </div>
             <div className={`${styles.project} ${styles.design} ${styles.project2}`}>
               <div className={styles.projectContent}>
-                <h3>Design Project</h3>
-                <p className={styles.description}>A brief description of the design process</p>
+                <h3>Hello Xioma Website Redesign</h3>
+            
                 <div className={styles.projectLinks}>
-                  <a href="#" className={styles.link}>View Case Study</a>
+                  <a href="#" className={styles.link}>View</a>
                 </div>
               </div>
             </div>
             <div className={`${styles.project} ${styles.software} ${styles.project3}`}>
               <div className={styles.projectContent}>
-                <h3>Software Project</h3>
-                <p className={styles.description}>A brief description of the project and its key features</p>
+                <h3>Marble Solitaire Game</h3>
+          
                 <div className={styles.projectLinks}>
                   <a href="#" className={styles.link}>View Project</a>
-                  <a href="#" className={styles.link}>Source Code</a>
+            
                 </div>
               </div>
             </div>
             <div className={`${styles.project} ${styles.design} ${styles.project4}`}>
               <div className={styles.projectContent}>
-                <h3>Design Project</h3>
-                <p className={styles.description}>A brief description of the design process</p>
+                <h3>Summer@Cornish Website Redesign</h3>
+              
                 <div className={styles.projectLinks}>
-                  <a href="#" className={styles.link}>View Case Study</a>
+                  <a href="#" className={styles.link}>View</a>
                 </div>
               </div>
             </div>
             <div className={`${styles.project} ${styles.software} ${styles.project5}`}>
               <div className={styles.projectContent}>
-                <h3>Software Project</h3>
-                <p className={styles.description}>A brief description of the project and its key features</p>
+                <h3> Islands Of Hex Game</h3>
+              
                 <div className={styles.projectLinks}>
                   <a href="#" className={styles.link}>View Project</a>
-                  <a href="#" className={styles.link}>Source Code</a>
+                 
                 </div>
               </div>
             </div>
             <div className={`${styles.project} ${styles.design} ${styles.project6}`}>
               <div className={styles.projectContent}>
-                <h3>Design Project</h3>
-                <p className={styles.description}>A brief description of the design process</p>
+                <h3>Wellness App</h3>
+              
                 <div className={styles.projectLinks}>
-                  <a href="#" className={styles.link}>View Case Study</a>
+                  <a href="#" className={styles.link}>View </a>
                 </div>
               </div>
-            </div>
-            <div className={`${styles.project} ${styles.software} ${styles.project7}`}>
-              <div className={styles.projectContent}>
-                <h3>Software Project</h3>
-                <p className={styles.description}>A brief description of the project and its key features</p>
-                <div className={styles.projectLinks}>
-                  <a href="#" className={styles.link}>View Project</a>
-                  <a href="#" className={styles.link}>Source Code</a>
-                </div>
-              </div>
-            </div>
-            <div className={`${styles.project} ${styles.design} ${styles.project8}`}>
-              <div className={styles.projectContent}>
-                <h3>Design Project</h3>
-                <p className={styles.description}>A brief description of the design process</p>
-                <div className={styles.projectLinks}>
-                  <a href="#" className={styles.link}>View Case Study</a>
-                </div>
-              </div>
-            </div>
+            </div>    
           </div>
           <div className={styles.key}>
             <div className={styles.keyItem}>
